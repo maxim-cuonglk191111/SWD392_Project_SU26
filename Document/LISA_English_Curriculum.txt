@@ -1,0 +1,1874 @@
+CEFR-aligned (Cambridge A1 → early A2) topic framework for STAGE 1 – BEGINNER (Levels 1–30) of LISA, focusing ONLY on SPEAKING, designed for gamification, daily-life relevance, and psychological safety for shy or low-confidence speakers.
+This is written so that game designers, language designers, and AI engineers can all work from the same structure.
+This structure is very important because:
+•	It gives clear speaking tasks (no silence)
+•	It keeps anxiety low
+•	It allows AI prompts + Moderator guidance
+•	It ensures 60 minutes = real speaking time
+________________________________________
+🎮 LISA – STAGE 1 (LEVELS 1–30)
+Levels 1–30 | Target Outcome: Elementary Speaking (A1 → early A2)
+Each level = 60 minutes speaking | 6 sub-levels × 10 minutes
+Design principles (aligned with CEFR – Cambridge):
+•	Concrete → familiar → personal
+•	No abstract opinions
+•	No debate
+•	High repetition, low cognitive load
+•	Emotionally safe, everyday topics
+•	“I – My – Here – Now” orientation
+Each level = 6 sub-levels × 10 minutes
+Universal structure for EVERY 10-minute sub-level
+1.	Warm-up (2 min) – repetition, safe phrases
+2.	Core speaking (6 min) – personal + simple
+3.	Wrap-up (2 min) – repeat / summarize
+ 
+________________________________________
+LEVEL 1–5: SURVIVAL SPEAKING (A1 – Absolute Beginner)
+🔵 LEVEL 1 – SAYING WHO I AM
+Sub-level 1: My name
+•	My full name
+•	My nickname
+•	How people call me
+Sub-level 2: Where I’m from
+•	Country
+•	City
+•	One simple fact
+Sub-level 3: Me now
+•	Student / worker
+•	Simple sentence: “I am…”
+Sub-level 4: One thing about me
+•	I like…
+•	I don’t like…
+Sub-level 5: Repeat & swap
+•	Ask and answer with partners
+Sub-level 6: Mini story
+•	“My name is… I’m from… I am…”
+________________________________________
+🔵 LEVEL 2 – COUNTRIES & LANGUAGES
+1: My country
+2: My language
+3: Languages I hear
+4: English in my life
+5: Simple comparison (A or B)
+6: Repeat & summarize
+________________________________________
+🔵 LEVEL 3 – GREETINGS & POLITENESS
+1: Saying hello
+2: Saying goodbye
+3: Thank you & sorry
+4: Short dialogues
+5: Role-play (meet & leave)
+6: Natural repetition
+________________________________________
+🔵 LEVEL 4 – AGE & FAMILY
+1: My age
+2: Family members
+3: Who I live with
+4: Simple description
+5: Ask about family
+6: Family mini-talk
+________________________________________
+🔵 LEVEL 5 – MY HOME
+1: Where I live
+2: House or apartment
+3: Rooms
+4: Favorite place at home
+5: Describe & compare
+6: Home story
+________________________________________
+LEVEL 6–10: DAILY LIFE FOUNDATION (A1)
+🔵 LEVEL 6 – DAILY ROUTINE
+1: Morning routine
+2: Work / study time
+3: Evening routine
+4: Time words
+5: Weekday vs weekend
+6: Full day story
+________________________________________
+🔵 LEVEL 7 – FOOD & DRINKS
+1: Breakfast
+2: Lunch
+3: Dinner
+4: Favorite food
+5: Like / don’t like
+6: Food day recap
+________________________________________
+🔵 LEVEL 8 – FREE TIME & HOBBIES
+1: Free time activities
+2: Indoor hobbies
+3: Outdoor hobbies
+4: Weekend hobby
+5: Hobby with friends
+6: Hobby story
+________________________________________
+🔵 LEVEL 9 – PLACES AROUND ME
+1: Shops
+2: Cafes / restaurants
+3: Supermarket
+4: Near / far
+5: Simple directions
+6: My area talk
+________________________________________
+🔵 LEVEL 10 – YESTERDAY
+1: Yesterday morning
+2: Yesterday afternoon
+3: Yesterday evening
+4: One thing I did
+5: Ask about yesterday
+6: Yesterday story
+________________________________________
+LEVEL 11–15: FUNCTIONAL COMMUNICATION (A1 → A2)
+🔵 LEVEL 11 – SHOPPING
+1: Things I buy
+2: Prices
+3: Asking for things
+4: Buying clothes
+5: Simple role-play
+6: Shopping recap
+________________________________________
+🔵 LEVEL 12 – EATING OUT
+1: Restaurant types
+2: Ordering food
+3: Drinks
+4: Paying the bill
+5: Restaurant role-play
+6: Eating out story
+________________________________________
+🔵 LEVEL 13 – TRANSPORTATION
+1: How I travel
+2: Bus / bike / car
+3: Time & distance
+4: Daily travel
+5: Travel problems
+6: Travel routine
+________________________________________
+🔵 LEVEL 14 – WEATHER & CLOTHES
+1: Today’s weather
+2: Hot / cold / rainy
+3: Clothes I wear
+4: Weather & clothes
+5: Favorite weather
+6: Weather talk
+________________________________________
+
+🔵 LEVEL 15 – WEEKEND
+1: Last weekend
+2: Weekend activities
+3: With friends/family
+4: Good or bad weekend
+5: Ask about weekend
+6: Weekend story
+________________________________________
+LEVEL 16–20: PERSONAL WORLD (A2 – Low)
+🔵 LEVEL 16 – JOB / STUDY
+1: My job/study
+2: Where I work/study
+3: Daily tasks
+4: People I work with
+5: Like / don’t like
+6: Work/study talk
+________________________________________
+🔵 LEVEL 17 – SKILLS
+1: Things I can do
+2: Things I can’t do
+3: Skills at work/study
+4: Learning now
+5: Want to learn
+6: Skills summary
+________________________________________
+🔵 LEVEL 18 – HEALTH
+1: How I feel
+2: Body parts
+3: Simple problems
+4: Healthy habits
+5: Doctor role-play
+6: Health routine
+________________________________________
+🔵 LEVEL 19 – FRIENDS
+1: My friends
+2: How we met
+3: What we do
+4: Best friend
+5: Friends & free time
+6: Friend story
+________________________________________
+🔵 LEVEL 20 – FAVORITES
+1: Favorite food
+2: Favorite movie
+3: Favorite music
+4: Favorite place
+5: Simple reasons
+6: Favorites recap
+________________________________________
+LEVEL 21–25: EXPANDING EXPERIENCE (A2)
+🔵 LEVEL 21 – TRAVEL
+1: Places visited
+2: Transport
+3: Food on trips
+4: Good memories
+5: Travel problems
+6: Travel story
+________________________________________
+🔵 LEVEL 22 – HOLIDAYS
+1: National holidays
+2: What people do
+3: Food & family
+4: Last holiday
+5: Holiday feelings
+6: Holiday talk
+________________________________________
+🔵 LEVEL 23 – DAILY PROBLEMS
+1: Being late
+2: Losing things
+3: Small problems
+4: Simple solutions
+5: Ask for help
+6: Problem story
+________________________________________
+🔵 LEVEL 24 – PLANS
+1: Tomorrow
+2: Next week
+3: Plans with friends
+4: Work/study plans
+5: Weekend plans
+6: Plan summary
+________________________________________
+🔵 LEVEL 25 – TECHNOLOGY
+1: My phone
+2: Apps I use
+3: Internet use
+4: Daily tech habits
+5: Tech problems
+6: Tech talk
+________________________________________
+LEVEL 26–30: PRE-A2 CONFIDENCE BUILDING
+🔷 LEVEL 26 – LEARNING ENGLISH
+1: Why I learn English
+2: How I learn
+3: Using English daily
+4: Problems learning
+5: Feeling about English
+6: English journey
+________________________________________
+
+🔷 LEVEL 27 – WORK & LIFE
+1: Busy days
+2: Free days
+3: Balance
+4: Stress & rest
+5: What helps me
+6: Life talk
+________________________________________
+🔷 LEVEL 28 – SIMPLE OPINIONS
+1: Like / don’t like
+2: Prefer A or B
+3: Food opinions
+4: Activity opinions
+5: Easy choices
+6: Opinion recap
+________________________________________
+🔷 LEVEL 29 – LIFE CHANGES
+1: Before
+2: Now
+3: Small changes
+4: Good changes
+5: Future change
+6: Life change story
+________________________________________
+🔷 LEVEL 30 – MY LIFE STORY (A1–A2 EXIT)
+1: My past
+2: My present
+3: My daily life
+4: My people
+5: My future wish
+6: Full life story
+________________________________________
+
+
+🎯 RESULT AFTER LEVEL 30
+🎉 Completion Outcome:
+✅ Speaker reaches Elementary Speaking (A1–A2)
+✅ Comfortable speaking 60 minutes continuously
+✅ Fear of speaking largely removed 
+
+This practice will NOT repeat Stage 1 mechanics, only what is new and expanded, so this is easy for your team to plug into the system.
+Below is a complete, systematic sub-topic breakdown for STAGE 2 (Levels 31–60), using 15-minute blocks, fully aligned with A2+ → B1- speaking (Cambridge CEFR) and 100% speaking-only for LISA gamification.
+CEFR speaking focus at this stage (Cambridge-aligned):
+•	Longer turns
+•	Simple explanations & reasons
+•	Connected speech (past–present–future)
+•	Everyday problem-solving
+•	Personal opinions (low risk)
+•	Real-life interaction (work, study, social life)
+Still:
+🚫 No debate
+🚫 No abstract philosophy
+🚫 No academic language
+This is designed so that:
+•	Moderators know exactly what to do
+•	AI can scaffold naturally
+•	Players speak continuously without stress
+•	Cognitive load increases gently
+________________________________________
+LEVELS 31–35: CONFIDENT DAILY COMMUNICATION (A2+)
+🔵 LEVEL 31 – MY TYPICAL WEEK
+1.	Weekdays routine
+Talk about a normal weekday from morning to night.
+(What time you wake up, work/study, rest)
+2.	Weekend routine
+Compare what you do on weekends vs weekdays.
+3.	Busy vs free days
+Describe a busy day and a free day.
+Say which one you prefer and why (simple reasons).
+4.	Study/work balance
+Explain how you balance work/study and rest.
+5.	Changes in my week
+Talk about changes in your routine recently.
+6.	Weekly summary story
+Tell the story of one full week in your life.
+________________________________________
+🔵 LEVEL 32 – TIME MANAGEMENT
+1.	Morning time
+Describe your morning routine and how you use time.
+2.	Busy hours
+Talk about the busiest time of your day.
+3.	Being late / early
+Share experiences of being late or early.
+4.	Planning the day
+Explain how you plan your day (or don’t).
+5.	Time problems
+Talk about problems with time (too busy, tired). 
+6.	Better time habits
+Explain one habit you want to improve .
+________________________________________
+🔵 LEVEL 33 – FOOD, HABITS & LIFESTYLE
+1.	Daily meals
+Describe what you eat in a normal day.
+2.	Eating habits
+Talk about eating times, snacks, drinks .
+3.	Cooking vs eating out
+Compare eating at home and eating outside.
+4.	Healthy vs unhealthy
+Give examples of healthy and unhealthy habits.
+5.	Food changes
+Talk about changes in your eating habits.
+6.	Lifestyle reflection
+Explain how food affects your daily life.
+________________________________________
+🔵 LEVEL 34 – PLACES I OFTEN GO
+1.	Work/study places
+Describe places where you work or study.
+2.	Food & coffee places
+Talk about cafes or restaurants you like.
+3.	Shopping places
+Describe where you usually shop.
+4.	Relaxing places
+Talk about places where you relax.
+5.	Why I like them
+Explain why you like these places. 
+6.	My daily map
+Describe your daily movement between places.
+________________________________________ 
+🔵 LEVEL 35 – PEOPLE IN MY DAILY LIFE
+1.	People at work/school
+Talk about people you meet every day.
+2.	Friends & classmates
+Describe your friends or classmates.
+3.	Family contact
+Explain how often you talk to family .
+4.	Neighbors
+Talk about your neighbors or people nearby.
+5.	Communication style
+Describe how you communicate with people.
+6.	People summary
+Summarize who is important in your daily life .
+________________________________________
+LEVELS 36–40: EXPERIENCES & STORIES (A2+ → B1-)
+
+🔵 LEVEL 36 – PAST EXPERIENCES
+1.	Good experience
+Tell a positive experience from the past.
+2.	Bad experience
+Describe a difficult or unpleasant experience.
+3.	First-time experience
+Talk about doing something for the first time.
+4.	What I learned
+Explain what you learned from that experience. 
+5.	Feelings then & now
+Compare how you felt then and now. 
+6.	Experience story
+Tell the full story clearly. 
+________________________________________
+🔵 LEVEL 37 – TRAVEL & TRANSPORTATION
+1.	Daily commuting
+Describe how you travel daily.
+2.	Transport problems
+Talk about problems with transport.
+3.	Travel preferences
+Explain how you prefer to travel and why.
+4.	Past trip
+Describe a trip you took before.
+5.	Travel plans
+Talk about a trip you want to take.
+6.	Travel story
+Tell a complete travel story .
+________________________________________
+🔵 LEVEL 38 – STUDYING & LEARNING
+1.	Subjects I study
+Describe what you study or learned before .
+2.	Learning methods
+Explain how you usually study.
+3.	Learning difficulties
+Talk about difficulties in learning. 
+4.	Studying with others
+Compare studying alone vs with others.
+5.	Improving learning
+Explain how you want to improve. 
+6.	Learning reflection
+Reflect on your learning journey. 
+________________________________________
+🔵 LEVEL 39 – WORK TASKS & RESPONSIBILITIES
+1.	My main tasks
+Describe your main daily tasks .
+2.	Daily responsibilities
+Talk about responsibilities at work/study .
+3.	Easy tasks
+Explain tasks you find easy. 
+4.	Difficult tasks
+Describe tasks you find difficult.
+5.	Working with others
+Talk about teamwork experiences.
+6.	Workday summary
+Describe one full work/study day.
+________________________________________ 
+🔵 LEVEL 40 – COMMUNICATION PROBLEMS
+1.	Language problems
+Talk about problems speaking or understanding .
+2.	Misunderstandings
+Describe a misunderstanding .
+3.	Asking for repetition
+Practice asking people to repeat or explain. 
+4.	Clarifying meaning
+Explain how you clarify information.
+5.	Solving communication issues
+Talk about solutions .
+6.	Communication story
+Tell a communication problem story. 
+________________________________________
+LEVELS 41–45: OPINIONS & CHOICES (B1- Entry)
+
+🔵 LEVEL 41 – LIKES, DISLIKES & REASONS
+1.	Things I like in daily life
+Talk about activities, food, places, or habits you like.
+2.	Things I dislike
+Describe things you don’t enjoy in daily life.
+3.	Giving reasons
+Explain why you like or dislike something (because, so).
+4.	Changing preferences
+Talk about something you liked before but not now (or vice versa).
+5.	Comparing preferences
+Compare two things you like or dislike (A vs B).
+6.	Personal taste summary
+Summarize what your likes say about you. 
+________________________________________
+🔵 LEVEL 42 – MAKING CHOICES
+1.	Daily small choices
+Talk about choices you make every day (food, clothes, time).
+2.	Study/work choices
+Describe choices related to study or work .
+3.	Choosing between two options
+Explain how you choose A or B. 
+4.	Simple pros & cons
+Talk about good and bad points of a choice. 
+5.	Satisfied or regretful choices
+Describe a choice you feel good or bad about. 
+6.	Decision story
+Tell the story of one decision from start to result.
+________________________________________ 
+🔵 LEVEL 43 – TECHNOLOGY IN DAILY LIFE
+1.	Daily phone use
+Describe how you use your phone every day.
+2.	Apps and tools
+Talk about apps or tools you often use.
+3.	Benefits of technology
+Explain how technology helps your life.
+4.	Problems with technology
+Describe problems or stress caused by technology.
+5.	Technology habits
+Talk about good or bad tech habits.
+6.	Technology reflection
+Summarize how technology affects your life.
+________________________________________ 
+🔵 LEVEL 44 – ENTERTAINMENT & MEDIA
+1.	Movies and series
+Describe movies or series you watch.
+2.	Music and audio
+Talk about music you like and when you listen.
+3.	Online entertainment
+Describe YouTube, TikTok, games, or online content.
+4.	Entertainment habits
+Explain how often and when you relax with media.
+5.	Watching alone or with others
+Compare entertainment alone vs with friends.
+6.	Entertainment story
+Tell a story about a memorable entertainment experience. 
+________________________________________
+🔵 LEVEL 45 – SHOPPING & SERVICES
+1.	Shopping habits
+Describe what and how often you shop.
+2.	Online vs offline shopping
+Compare shopping online and in stores.
+3.	Price, quality & choice
+Talk about how you choose products.
+4.	Service experiences
+Describe good or bad service experiences.
+5.	Customer problems
+Talk about problems and how you solved them.
+6.	Shopping story
+Tell a full shopping experience story.
+________________________________________ 
+LEVELS 46–50: SOCIAL & REAL-LIFE INTERACTION (B1-)
+🔵 LEVEL 46 – SOCIAL SITUATIONS
+1.	Meeting new people
+Describe how you meet new people.
+2.	Starting conversations
+Talk about common small talk topics.
+3.	Keeping conversations going
+Explain how you continue a conversation.
+4.	Feeling shy or confident
+Describe your feelings in social situations. 
+5.	Social difficulties
+Talk about problems in social communication .
+6.	Social experience story
+Tell a story about a social situation.
+________________________________________ 
+ 
+🔵 LEVEL 47 – WORKING WITH OTHERS
+1.	Group tasks
+Describe tasks you do in a group.
+2.	Roles in teamwork
+Explain your role when working with others.
+3.	Teamwork problems
+Talk about problems in teamwork.
+4.	Giving opinions politely
+Practice sharing opinions politely. 
+5.	Solving team issues
+Explain how problems were solved. 
+6.	Teamwork reflection
+Summarize what you learned about teamwork. 
+________________________________________
+🔵 LEVEL 48 – DAILY PROBLEMS & SOLUTIONS
+1.	Common daily problems
+Describe problems at work, study, or home.
+2.	Causes of problems
+Explain why these problems happen.
+3.	Asking for help
+Talk about how you ask for help.
+4.	Giving simple solutions
+Suggest simple ways to solve problems.
+5.	Results of solutions
+Explain what happened after solving the problem.
+6.	Problem-solving story
+Tell a full problem → solution story.
+________________________________________ 
+🔵 LEVEL 49 – HEALTH, STRESS & BALANCE
+1.	Feeling tired or stressed
+Describe when and why you feel tired.
+2.	Sources of stress
+Talk about things that cause stress.
+3.	Relaxing activities
+Explain what helps you relax.
+4.	Healthy habits
+Describe habits for better health.
+5.	Work–life balance
+Talk about balancing work/study and rest.
+6.	Health reflection
+Summarize your health and balance situation. 
+________________________________________
+🔵 LEVEL 50 – PLANS & DECISIONS
+1.	Short-term plans
+Describe plans for this week or month.
+2.	Changing plans
+Talk about plans that changed.
+3.	Planning with others
+Explain how you plan with friends or colleagues.
+4.	Difficult plans
+Describe plans that are hard to make.
+5.	Results of planning
+Talk about success or failure of plans.
+6.	Planning summary
+Summarize your planning style. 
+________________________________________
+LEVELS 51–55: CONNECTED SPEECH & MEANING (B1-)
+🔵 LEVEL 51 – LIFE CHANGES
+1.	Life before
+Describe your life in the past. 
+2.	Life now
+Talk about your current life.
+3.	Big changes
+Describe one important life change.
+4.	Small daily changes
+Talk about small changes in habits. 
+5.	Positive & negative changes
+Compare good and bad changes.
+6.	Life change story
+Tell the story of a life change. 
+________________________________________
+ 
+🔵 LEVEL 52 – GOALS & MOTIVATION
+1.	Personal goals
+Describe goals in your personal life.
+2.	Study or work goals
+Talk about career or study goals.
+3.	Motivation sources
+Explain what motivates you.
+4.	Difficulties and obstacles
+Talk about problems in reaching goals.
+5.	Staying motivated
+Describe how you keep going.
+6.	Goal reflection
+Summarize your goals and motivation. 
+________________________________________
+🔵 LEVEL 53 – DAILY LIFE COMPARISONS
+1.	Daily routines comparison
+Compare your life with others’. 
+2.	City vs quiet life
+Compare different living styles.
+3.	Work/study styles
+Compare ways of working or studying.
+4.	Past vs present
+Compare your past and present life.
+5.	Preferences
+Explain which you prefer and why. 
+6.	Comparison summary
+Summarize your comparisons. 
+________________________________________
+🔵 LEVEL 54 – GIVING SIMPLE ADVICE
+1.	Common problems
+Describe common problems people have.
+2.	Giving advice
+Give advice using should / can.
+3.	Advice to friends
+Talk about advice you gave or received.
+4.	Good vs bad advice
+Compare helpful and unhelpful advice.
+5.	Following advice
+Talk about results of following advice.
+6.	Advice role-play
+Simulate giving advice in a situation .
+________________________________________
+🔵 LEVEL 55 – PROBLEM-SOLVING TALK
+1.	Explaining a problem clearly
+Describe a problem step by step. 
+2.	Causes of the problem
+Explain why it happened.
+3.	Possible solutions
+Suggest different solutions.
+4.	Choosing a solution
+Explain why you chose one solution.
+5.	Results
+Describe the outcome.
+6.	Problem case story
+Tell the full problem-solving story .
+________________________________________
+LEVELS 56–60: B1- THRESHOLD SPEAKING
+🔵 LEVEL 56 – WORK & STUDY EXPERIENCES
+1.	Best experiences
+Talk about a positive work/study experience.
+2.	Difficult moments
+Describe a challenging situation.
+3.	Mistakes and learning
+Talk about mistakes you made.
+4.	People involved
+Describe people in that experience.
+5.	Changes after experience
+Explain how you changed.
+6.	Experience summary
+Summarize the experience. 
+________________________________________
+🔵 LEVEL 57 – OPINIONS ABOUT DAILY LIFE
+1.	Work vs study life
+Share opinions on work and study.
+2.	Busy vs relaxed life
+Compare two lifestyles .
+3.	Online vs offline life
+Talk about modern life.
+4.	Good and bad points
+Explain advantages and disadvantages. 
+5.	Personal opinion
+Share your preference .
+6.	Opinion reflection
+Summarize your views. 
+________________________________________
+🔵 LEVEL 58 – EXPLAINING IDEAS CLEARLY
+1.	Explaining routines
+Explain how you do something dail y.
+2.	Explaining a process
+Describe steps of a simple process .
+3.	Giving examples
+Support ideas with examples .
+4.	Clarifying meaning
+Practice making ideas clear .
+5.	Checking understanding
+Ask if others understand .
+6.	Clear explanation story
+Explain something from start to end. 
+________________________________________
+🔵 LEVEL 59 – PREPARING FOR THE FUTURE
+1.	Future study or work ideas
+Talk about future directions. 
+2.	Skills to learn
+Describe skills you want to improve.
+3.	Possible challenges
+Talk about future difficulties. 
+4.	Preparation plans
+Explain how you prepare. 
+5.	Hope and worries
+Share hopes and worries.
+6.	Future vision talk
+Describe your future life.
+________________________________________
+🔵 LEVEL 60 – MY LIFE, MY VOICE (STAGE EXIT)
+1.	My past
+Talk about where you started.
+2.	My present
+Describe your current life.
+3.	My strengths
+Talk about what you do well.
+4.	My challenges
+Describe difficulties you face.
+5.	My future direction
+Talk about where you are going.
+6.	Full life narrative
+Tell your life story confidently.
+________________________________________
+STAGE 3 (Levels 61–100), fully aligned with Cambridge CEFR Speaking (B1 → B2) and
+consistent with Stage 1 & 2 logic.
+🎮 LISA – STAGE 3 (ADVANCING → CONFIDENT SPEAKER)
+Levels 61–100 | 120 minutes / level
+6 sub-levels × 20 minutes
+🎯 Target outcome by Level 100
+→ Speakers can sustain conversation, explain ideas clearly, express opinions, reflect,
+compare, and narrate experiences at B2- speaking readiness
+🔶 STAGE 3 STRUCTURE (CONSISTENT FOR ALL LEVELS)
+Each level follows the same 6-step speaking flow:
+1. Personal Experience
+2. Explanation & Reasoning
+3. Comparison / Perspective
+4. Problem / Challenge
+5. Reflection / Opinion
+6. Extended Narrative / Summary
+🔵 LEVELS 61–70 | STRONG B1 → B1+
+🔵 LEVEL 61 – MANAGING STUDY & LIFE
+1. My current study/work schedule
+Describe real daily and weekly responsibilities clearly and logically.
+Your current status (student, working, both)
+o Typical weekday schedule: Morning/Afternoon/Evening activities
+o Weekend schedule: How it is different from weekdays
+o Fixed responsibilities: Classes, meetings, assignments, deadlines
+o Flexible activities: Self-study, exercise, hobbies, rest
+2. Time management methods
+Explain how and why you organize your time in certain ways.
+o Tools you use (planner, calendar app, to-do list)
+o How you prioritize tasks: Important vs urgent
+o How you plan a typical day or week
+o Why you choose these methods
+o What works well for you
+3. Busy vs relaxed periods
+Compare different time periods and describe contrasts clearly.
+o Describe a very busy period: Exams, deadlines, projects
+o Describe a relaxed period: Holidays, breaks, free weeks
+o Compare: Stress level, Sleep, Mood and energy, Speaking or social time
+o Which period you prefer and why
+4. Time-related problems
+Identify problems and explain their causes and effects.
+o Common time problems you face: Lack of time, Too many tasks, Poor concentration
+Situations where time pressure affects you
+o Effects of poor time management: Stress, Lower performance, Less communication practice
+o Why these problems happen
+5. Improving balance
+Reflect and give personal opinions about improvement.
+o What balance means to you
+o What you are doing well now
+o What you need to improve
+o Strategies to balance: Study/work, Rest, English speaking practice
+o Advice you would give to someone with the same problem
+6. Weekly life narrative
+Start of the week (Monday mindset)
+o Major responsibilities and challenges
+o One difficult moment
+o How you managed your time
+o End of the week reflection
+o What you learned about balance
+🔵 LEVEL 62 – LEARNING EXPERIENCES
+1. Best learning experiences
+• Describe 1–2 learning experiences you enjoyed
+• Can be at school, university, work, or self-study
+• What did you learn?
+• Where and when?
+• Why was it effective or enjoyable?
+2. Difficult subjects or skills
+• Talk about subjects or skills you find hard
+• What makes them difficult?
+• Is it content, speed, pressure, or teaching style?
+• How do you feel when learning them?
+3. Learning styles comparison
+• Compare different ways of learning
+• Learning alone vs with others
+• Online vs offline
+• Listening vs practicing
+• Which works better for you and why?
+4. Learning challenges
+• Describe problems you face when learning
+• Time, motivation, confidence, memory, focus
+• Give real examples
+• How often does this happen?
+5. How I overcome difficulties
+• Explain strategies you use to improve
+• Habits, tools, people, mindset
+• What works and what doesn’t
+• Changes you’ve made recently
+6. Learning journey story
+• Tell a story about learning something from start to now
+• Beginning → struggle → improvement → current level
+• What you learned about yourself
+🔵 LEVEL 63 – FRIENDSHIPS & RELATIONSHIPS
+1. Important friendships
+• Describe people who matter to you
+• How you met
+• Why they are important
+• How often you communicate
+2. Making and keeping friends
+• Talk about how you build friendships
+• First meetings
+• Shared activities
+• Communication habits
+3. Different types of relationships
+• Compare relationships in your life
+• Friends, classmates, colleagues
+• Close vs casual relationships
+• Online vs offline friendships
+4. Conflicts and misunderstandings
+• Describe conflicts in relationships
+• What caused the conflict?
+• How did you feel?
+• How was it solved (or not)?
+5. What makes relationships healthy
+• Reflect on good relationships
+• Trust, respect, communication, time
+• Give examples from your life
+6. Friendship story
+• Tell a complete friendship story
+• Beginning → challenge → resolution → lesson learned
+🔵 LEVEL 64 – COMMUNICATION SKILLS
+1. How I usually communicate
+• Describe your communication style
+• Talking, texting, calling
+• With friends vs teachers/bosses
+• Strengths and weaknesses
+2. Formal vs informal communication
+• Compare two communication styles
+• Language choice
+• Tone and behavior
+• Situations where each is used
+3. Miscommunication experiences
+• Describe a misunderstanding
+• What was misunderstood?
+• Why did it happen?
+• What was the result?
+4. Communication problems
+• Talk about common communication difficulties
+• Shyness, language barriers, emotions
+• Online vs face-to-face problems
+5. Improving communication skills
+• Explain how you try to communicate better
+• Practice methods
+• Feedback from others
+• Confidence building
+6. Conversation reflection
+• Reflect on your speaking ability
+• What you do well
+• What you want to improve
+• How English helps communication
+🔵 LEVEL 65 – STRESS, PRESSURE & WELL-BEING
+1. Sources of pressure
+• Identify stress sources
+• Study, work, family, money
+• Short-term vs long-term pressure
+2. Physical & mental effects
+• Describe how stress affects you
+• Sleep, mood, health, focus
+• Give real examples
+3. Healthy vs unhealthy coping
+• Compare coping methods
+• Exercise, rest, talking vs avoidance, overworking
+• Which help and which don’t?
+4. Stressful situations
+• Describe a stressful event
+• What happened?
+• How did you react?
+• What helped (or didn’t)?
+5. Self-care strategies
+• Explain how you take care of yourself
+• Daily habits
+• Small actions
+• Changes you want to make
+6. Well-being story
+• Tell a story about stress and recovery
+• Stress → coping → improvement → lesson
+🔵 LEVEL 66 – WORKING IN GROUPS
+1. Group projects experience
+• Describe a group project
+• Purpose, people involved
+• Your role
+2. Roles and responsibilities
+• Explain different roles in groups
+• Leader, supporter, planner
+• Which role suits you?
+3. Group conflicts
+• Talk about conflicts in teamwork
+• Different opinions
+• Unequal work
+• Communication issues
+4. Problem-solving in teams
+• Explain how problems were solved
+• Discussion, compromise, leadership
+• Results
+5. Lessons learned
+• Reflect on teamwork lessons
+• What you learned about yourself
+• Skills gained
+6. Group project narrative
+• Tell the full story of a group project
+🔵 LEVEL 67 – DECISIONS & CONSEQUENCES
+1. Important decisions I made
+• Describe one or two important decisions
+2. Factors influencing decisions
+• Talk about influences
+• Family, money, emotions, advice
+3. Good vs bad decisions
+• Compare successful and poor decisions
+4. Unexpected outcomes
+• Describe surprising results
+5. What I learned
+• Reflect on decision-making skills
+6. Decision story
+• Tell a full decision story
+🔵 LEVEL 68 – DIGITAL LIFE & SOCIAL MEDIA
+1. Daily digital habits
+• Describe daily screen use
+2. Benefits of social media
+• Learning, connection, entertainment
+3. Problems of online life
+• Distraction, comparison, stress
+4. Online vs offline relationships
+• Compare communication styles
+5. Healthy digital balance
+• Explain balance strategies
+6. Digital life reflection
+• Reflect on digital impact
+🔵 LEVEL 69 – MONEY & RESPONSIBILITY
+1. Personal spending habits
+• Describe how you spend money
+2. Needs vs wants
+• Explain spending priorities
+3. Budgeting experiences
+• Talk about planning money
+4. Financial mistakes
+• Describe money mistakes
+5. Money lessons learned
+• Reflect on responsibility
+6. Money story
+• Tell a financial learning story
+🔵 LEVEL 70 – MID-STAGE REVIEW (B1+)
+1. My life now
+• Describe your current daily life situation
+• Study/work status
+• Daily responsibilities
+• Lifestyle and routines
+• How your life feels now compared to before
+2. My communication progress
+• Talk about how your communication has improved
+• Speaking confidence
+• Vocabulary growth
+• Comfort in conversations
+• Differences between now and earlier levels
+3. My strengths in speaking
+• Identify what you do well when speaking
+• Fluency, clarity, storytelling, confidence
+• Situations where you speak best
+• Feedback from others
+4. Remaining difficulties
+• Talk honestly about challenges you still face
+• Vocabulary gaps
+• Grammar hesitation
+• Fear of mistakes
+• Situations that are still difficult
+5. Goals for improvement
+• Explain what you want to improve next
+• Short-term goals
+• Long-term speaking goals
+• Skills you want to develop
+• How you plan to practice
+6. Personal progress narrative
+• Tell your speaking journey story
+• Starting point → struggles → improvement → current level
+• How LISA helped you
+• What you feel proud of
+🔷 LEVELS 71–80 | B1+ → B2-
+🔵 LEVEL 71 – PLANNING FOR THE FUTURE
+1. Future study/work plans
+• Describe your short-term and long-term plans
+• What you plan to study or do next
+• Time frame (months / years)
+• Why these plans matter to you
+2. Career interests
+• Talk about careers or roles you are interested in
+• What attracts you to these careers
+• Skills needed
+• Personal strengths related to them
+3. Possible obstacles
+• Identify challenges that may appear
+• Financial, academic, emotional, skill-based
+• External vs internal obstacles
+• Why these are difficult
+4. Preparation strategies
+• Explain how you are preparing
+• Learning skills
+• Gaining experience
+• Improving English or communication
+• Daily or weekly actions
+5. Confidence vs uncertainty
+• Reflect on how you feel about the future
+• What makes you confident
+• What makes you worried
+• How you manage uncertainty
+6. Future life story
+• Tell a future-focused life story
+• Where you see yourself
+• Your daily life in the future
+• What kind of person you want to become
+🔵 LEVEL 72 – VALUES & BELIEFS
+1. Important personal values
+• Describe values that guide your life
+• Honesty, responsibility, family, freedom, growth, etc.
+• Why these values matter to you
+2. How values shape decisions
+• Explain how values influence choices
+• Examples from study, work, relationships
+• Decisions you made because of your values
+3. Different viewpoints
+• Compare your values with others’
+• Friends, family, society
+• Accepting different opinions
+• Learning from differences
+4. Value conflicts
+• Describe situations where values conflict
+• Personal vs social expectations
+• Short-term vs long-term benefits
+• Emotional difficulty
+5. Changing beliefs
+• Talk about beliefs that changed over time
+• What you believed before
+• What changed your mind
+• Why the change happened
+6. Values reflection
+• Reflect on your value system
+• What values guide you now
+• How they affect your future decisions
+🔵 LEVEL 73 – CULTURE & DAILY LIFE
+1. Cultural habits
+• Describe cultural habits in your daily life
+• Food, communication, time, study/work habits
+• Family or social traditions
+2. Differences across cultures
+• Compare cultures you know
+• Your culture vs others
+• Daily behaviors and values
+• What surprised you
+3. Culture shock experiences
+• Describe a culture shock moment
+• Where and when it happened
+• How you felt
+• What you learned
+4. Misunderstandings
+• Talk about cultural misunderstandings
+• Language, behavior, expectations
+• How the situation was resolved
+5. Cultural adaptation
+• Explain how people adapt to new cultures
+• Personal strategies
+• Language, attitude, openness
+6. Cultural story
+• Tell a full cultural experience story
+• Before → misunderstanding → adaptation → lesson
+🔵 LEVEL 74 – PROBLEM-SOLVING IN REAL LIFE
+1. Recent real-life problems
+• Describe a recent real problem
+• Where it happened
+• Who was involved
+• Why it was a problem
+2. Causes and effects
+• Analyze the problem
+• Root causes
+• Short-term and long-term effects
+3. Possible solutions
+• Suggest multiple solutions
+• Easy vs difficult options
+• Risks and benefits
+4. Chosen solution
+• Explain your final choice
+• Why this solution
+• How it was implemented
+5. Results
+• Describe the outcome
+• Success or failure
+• Unexpected results
+6. Problem-solving case
+• Tell the full case as a story
+• Problem → thinking → action → result → lesson
+🔵 LEVEL 75 – LEADERSHIP & RESPONSIBILITY
+1. Leading or being led
+• Describe experiences as a leader or a team member
+• Situations where you led others
+• Situations where you followed instructions
+• Which role you feel more comfortable with and why
+2. Good leadership traits
+• Talk about qualities of a good leader
+• Communication, responsibility, fairness, empathy
+• Real examples of leaders you admire
+• Traits you want to develop
+3. Leadership challenges
+• Describe difficulties leaders face
+• Making decisions
+• Managing people
+• Handling conflict or pressure
+• Personal leadership challenges
+4. Responsibility under pressure
+• Talk about moments of responsibility
+• Deadlines, expectations, stress
+• How you reacted
+• What helped you manage pressure
+5. Leadership lessons
+• Reflect on lessons learned from leadership
+• Mistakes and improvements
+• Skills gained
+• How leadership changed your mindset
+6. Leadership experience story
+• Tell a full leadership story
+• Situation → challenge → action → result → lesson
+🔵 LEVEL 76 – OPINIONS & ARGUMENTS
+1. Opinions on student life
+• Share opinions about student life today
+• Workload, pressure, opportunities
+• Online vs offline learning
+• Social life and balance
+2. Supporting opinions with reasons
+• Explain reasons behind your opinions
+• Personal experiences
+• Examples
+• Simple evidence from daily life
+3. Agreeing & disagreeing politely
+• Practice respectful discussion
+• Express agreement
+• Express disagreement without conflict
+• Use polite language
+4. Different perspectives
+• Compare different viewpoints
+• Students, teachers, parents
+• Local vs global views
+• Why opinions differ
+5. Changing opinions
+• Talk about opinions that changed
+• What you thought before
+• What influenced change
+• How you feel now
+6. Opinion discussion summary
+• Summarize a discussion
+• Main opinions
+• Agreements and disagreements
+• Your final viewpoint
+🔵 LEVEL 77 – FAILURE & RESILIENCE
+1. Experiences of failure
+• Describe a failure experience
+• Study, work, or personal life
+• What went wrong
+2. Emotional reactions
+• Talk about feelings after failure
+• Disappointment, frustration, fear
+• How emotions affected actions
+3. Lessons learned
+• Explain what you learned
+• Skills, habits, mindset
+• Mistakes you won’t repeat
+4. Trying again
+• Describe efforts to improve
+• New strategies
+• Support from others
+• Motivation
+5. Growth mindset
+• Reflect on personal growth
+• How failure helped you grow
+• Changes in confidence or attitude
+6. Resilience story
+• Tell a full resilience story
+• Failure → struggle → effort → improvement → lesson
+🔵 LEVEL 78 – SUCCESS & ACHIEVEMENT
+1. Personal achievements
+• Describe achievements you are proud of
+• Academic, personal, or skill-based
+• Why they matter
+2. Effort behind success
+• Explain the work behind success
+• Time, discipline, sacrifice
+• Challenges faced
+3. Support from others
+• Talk about help you received
+• Friends, family, teachers, mentors
+• Emotional and practical support
+4. Unexpected success
+• Describe surprising achievements
+• Low expectations
+• Unexpected results
+• Feelings afterward
+5. Meaning of success
+• Reflect on what success means to you
+• Personal definition
+• Changing views over time
+6. Achievement narrative
+• Tell a full success story
+• Goal → effort → obstacles → success → reflection
+🔵 LEVEL 79 – ETHICS & DAILY CHOICES
+1. Right and wrong in daily life
+• Describe everyday ethical decisions
+• Honesty, fairness, responsibility
+• Simple real-life examples
+2. Difficult moral choices
+• Talk about hard decisions
+• Conflicting values
+• Pressure from others
+• Emotional difficulty
+3. Consequences of actions
+• Explain results of ethical choices
+• Short-term vs long-term effects
+• Impact on others
+4. Social responsibility
+• Discuss responsibility toward society
+• School, community, environment
+• Small actions with big impact
+5. Personal principles
+• Explain principles that guide you
+• Why they matter
+• How they influence behavior
+6. Ethical dilemma story
+• Tell a moral dilemma story
+• Situation → choice → action → result → reflection
+🔵 LEVEL 80 – ADVANCED REFLECTION (B2- ENTRY)
+1. My growth journey
+• Reflect on your overall development
+• Personal and communication growth
+• Changes in mindset
+2. Speaking confidence
+• Describe your confidence level now
+• Situations where you feel confident
+• Remaining fears
+3. Thinking in English
+• Talk about using English naturally
+• Thinking before speaking vs directly speaking
+• Daily-life examples
+4. Communication strengths
+• Identify strong communication skills
+• Fluency, clarity, storytelling, interaction
+5. Areas to improve
+• Talk about next challenges
+• Accuracy, vocabulary depth, argument clarity
+• Goals for Stage 4
+6. Self-reflection narrative
+• Tell a complete reflection story
+• Where you started → how you changed → where you are now → where you want to go
+🔴 LEVELS 81–100 | B2 READINESS & CONFIDENCE
+Each level keeps the same 6-sub-level structure:
+1. Personal experience
+2. Explanation
+3. Comparison
+4. Challenge
+5. Reflection
+6. Extended narrative
+🔵 LEVEL 81 – EDUCATION SYSTEMS
+1. Personal experience
+• Describe your experience with education
+• Schools or universities you attended
+• Teaching style you experienced
+• Exams, pressure, or support
+2. Explanation
+• Explain how the education system works (from your view)
+• Structure (subjects, exams, grading)
+• Roles of teachers and students
+• Strengths of the system
+3. Comparison
+• Compare different education systems
+• Your country vs another country
+• Traditional vs modern learning
+• Online vs in-person education
+4. Challenge
+• Talk about problems in education
+• Pressure, inequality, outdated methods
+• Student motivation
+• Access to education
+5. Reflection
+• Reflect on what education should focus on
+• Skills vs knowledge
+• Exams vs real-life skills
+• Your personal learning needs
+6. Extended narrative
+• Tell an education-related story
+• A turning point in your education
+• A teacher or experience that changed you
+• Lessons learned
+🔵 LEVEL 82 – WORK ENVIRONMENTS
+1. Personal experience
+• Describe workplaces you know
+• Internship, part-time, full-time, group projects
+• Physical or online environments
+• Daily routines
+2. Explanation
+• Explain what makes a good work environment
+• Communication
+• Team culture
+• Leadership style
+3. Comparison
+• Compare different work environments
+• Office vs remote work
+• Flexible vs strict environments
+• Small teams vs large organizations
+4. Challenge
+• Talk about challenges at work
+• Stress, deadlines, conflicts
+• Lack of motivation or support
+• Work-life balance
+5. Reflection
+• Reflect on your ideal work environment
+• What you value most
+• What you can tolerate
+• How environment affects performance
+6. Extended narrative
+• Tell a work-related story
+• A difficult or meaningful work experience
+• Problem → action → outcome → lesson
+🔵 LEVEL 83 – TECHNOLOGY & THE FUTURE
+1. Personal experience
+• Describe how technology affects your daily life
+• Study, work, communication
+• Tools you rely on
+• Changes over time
+2. Explanation
+• Explain how technology is shaping the future
+• Education, work, relationships
+• Automation, AI, online life
+3. Comparison
+• Compare life with and without technology
+• Past vs present
+• Digital vs non-digital lifestyles
+• Advantages and disadvantages
+4. Challenge
+• Discuss challenges caused by technology
+• Overuse, addiction, privacy
+• Job replacement
+• Social isolation
+5. Reflection
+• Reflect on responsible technology use
+• Balance
+• Ethics
+• Personal boundaries
+6. Extended narrative
+• Tell a future-focused story
+• Imagine your life in 10–20 years
+• Role of technology
+• Hopes and concerns
+🔵 LEVEL 84 – SOCIETY & RESPONSIBILITY
+1. Personal experience
+• Describe your role in society
+• Student, worker, citizen
+• Community involvement
+• Responsibilities you feel
+2. Explanation
+• Explain what social responsibility means
+• Individual vs collective responsibility
+• Examples in daily life
+3. Comparison
+• Compare responsible and irresponsible behavior
+• Personal behavior
+• Social examples
+• Short-term vs long-term impact
+4. Challenge
+• Talk about social problems
+• Inequality, environment, education
+• Youth responsibility
+• Why problems are difficult to solve
+5. Reflection
+• Reflect on what individuals can do
+• Small actions
+• Awareness
+• Personal responsibility
+6. Extended narrative
+• Tell a social responsibility story
+• Situation → action → impact → reflection
+🔵 LEVEL 85 – HAPPINESS & LIFE BALANCE
+1. Personal experience
+• Describe what makes you happy
+• Daily habits
+• Relationships
+• Personal achievements
+2. Explanation
+• Explain your definition of happiness
+• Internal vs external happiness
+• Short-term joy vs long-term satisfaction
+3. Comparison
+• Compare different lifestyles
+• Busy vs balanced life
+• Success-focused vs happiness-focused
+• Material vs emotional fulfillment
+4. Challenge
+• Discuss challenges to happiness
+• Stress, pressure, expectations
+• Social comparison
+• Fear of failure
+5. Reflection
+• Reflect on life balance
+• Work, study, rest, relationships
+• Changes you want to make
+6. Extended narrative
+• Tell a life-balance story
+• Imbalance → realization → change → outcome
+🔵 LEVEL 86 – PERSONAL IDENTITY
+1. Personal experience
+• Describe who you are today
+• Background (family, education, culture)
+• Roles you play (student, friend, worker)
+• Experiences that shaped you
+2. Explanation
+• Explain what “identity” means to you
+• Personal values
+• Beliefs and attitudes
+• Skills and interests
+3. Comparison
+• Compare past and present identity
+• Who you were before vs now
+• Changes in confidence or thinking
+• Influences (people, experiences)
+4. Challenge
+• Talk about challenges to your identity
+• Expectations from family/society
+• Self-doubt
+• Cultural or social pressure
+5. Reflection
+• Reflect on accepting yourself
+• Strengths and weaknesses
+• What you are proud of
+• What you are still working on
+6. Extended narrative
+• Tell an identity-shaping story
+• Situation → conflict → growth → lesson
+• How the experience changed you
+🔵 LEVEL 87 – COMMUNICATION STYLES
+1. Personal experience
+• Describe how you usually communicate
+• Speaking, writing, online, face-to-face
+• With friends vs authority figures
+• Cultural influences
+2. Explanation
+• Explain different communication styles
+• Direct vs indirect
+• Emotional vs logical
+• Formal vs informal
+3. Comparison
+• Compare your style with others
+• Friends, teachers, colleagues
+• Cultural or generational differences
+• Strengths and weaknesses
+4. Challenge
+• Discuss communication difficulties
+• Misunderstandings
+• Emotional reactions
+• Language barriers
+5. Reflection
+• Reflect on improving communication
+• Listening skills
+• Empathy
+• Adaptability
+6. Extended narrative
+• Tell a communication-related story
+• Problem → misunderstanding → adjustment → outcome
+🔵 LEVEL 88 – CHANGE & ADAPTATION
+1. Personal experience
+• Describe a major change in your life
+• Study, work, relationships, environment
+• Emotional reactions
+2. Explanation
+• Explain how people adapt to change
+• Mental flexibility
+• Skills and habits
+• Support systems
+3. Comparison
+• Compare life before and after change
+• Routines
+• Feelings
+• Opportunities
+4. Challenge
+• Talk about difficulties in adapting
+• Fear, resistance, uncertainty
+• Mistakes made during change
+5. Reflection
+• Reflect on personal growth
+• What change taught you
+• Skills you developed
+6. Extended narrative
+• Tell a full change story
+• Old life → disruption → adaptation → new normal
+🔵 LEVEL 89 – GOALS & MEANING
+1. Personal experience
+• Describe goals you are working toward
+• Academic, career, personal
+• Short-term vs long-term
+2. Explanation
+• Explain what gives life meaning to you
+• Purpose
+• Contribution
+• Personal values
+3. Comparison
+• Compare different types of goals
+• Material vs personal growth
+• Individual vs shared goals
+4. Challenge
+• Discuss challenges in finding meaning
+• Confusion
+• Pressure from society
+• Fear of failure
+5. Reflection
+• Reflect on your direction in life
+• Are your goals aligned with your values?
+• What might change?
+6. Extended narrative
+• Tell a goal-related life story
+• Dream → struggle → adjustment → insight
+🔵 LEVEL 90 – LIFE PRIORITIES
+1. Personal experience
+• Describe what matters most in your life now
+• Family, health, career, freedom
+• How priorities show in daily actions
+2. Explanation
+• Explain why priorities change over time
+• Age, experience, responsibility
+• External events
+3. Comparison
+• Compare past and present priorities
+• Student life vs adult life
+• Short-term pleasure vs long-term value
+4. Challenge
+• Discuss conflicts between priorities
+• Work vs family
+• Success vs well-being
+• Time and energy limits
+5. Reflection
+• Reflect on balancing priorities
+• Trade-offs
+• Conscious choices
+• What you want to protect
+6. Extended narrative
+• Tell a life-priority story
+• Decision → sacrifice → outcome → reflection
+🔴 LEVEL 91 – LIFE PHILOSOPHY
+1. Personal experience
+• Describe your current life philosophy
+• What principles guide your life now?
+• When did these ideas begin?
+• Which experiences shaped them?
+2. Explanation
+• Explain your philosophy in simple terms
+• Core beliefs (e.g. balance, effort, kindness)
+• How these beliefs guide decisions
+• What you value most in life
+3. Comparison
+• Compare your philosophy with others’
+• Family vs your own beliefs
+• Traditional vs modern thinking
+• Eastern vs Western views (if relevant)
+4. Challenge
+• Discuss challenges to your philosophy
+• Situations where beliefs are tested
+• Pressure from society or reality
+• Moments of doubt or contradiction
+5. Reflection
+• Reflect on how stable your philosophy is
+• What has changed over time?
+• What remains constant?
+• How philosophy helps during hardship
+6. Extended narrative
+• Tell a life-philosophy story
+• Critical moment → moral choice → consequence → lesson
+• How it shaped how you live today
+🔴 LEVEL 92 – LEARNING FROM OTHERS
+1. Personal experience
+• Describe people you learned from
+• Teachers, parents, mentors, friends
+• What they taught you directly or indirectly
+• How learning occurred (advice, example, conflict)
+2. Explanation
+• Explain why learning from others matters
+• Avoiding mistakes
+• Broadening perspectives
+• Emotional and social growth
+3. Comparison
+• Compare learning from self vs others
+• Trial-and-error learning
+• Guided learning
+• Which is more effective in different situations
+4. Challenge
+• Discuss difficulties in learning from others
+• Ego and pride
+• Misunderstanding advice
+• Conflicting opinions
+5. Reflection
+• Reflect on openness to learning
+• How teachable are you now?
+• What kind of feedback helps you grow?
+• What you still struggle to accept
+6. Extended narrative
+• Tell a learning-from-others story
+• Mistake → guidance → resistance → acceptance → growth
+🔴 LEVEL 93 – HANDLING UNCERTAINTY
+1. Personal experience
+• Describe uncertain periods in your life
+• Academic, career, financial, emotional uncertainty
+• Emotional responses (fear, confusion, hope)
+2. Explanation
+• Explain what uncertainty means to you
+• Lack of control
+• Unknown outcomes
+• Psychological impact
+3. Comparison
+• Compare certainty vs uncertainty
+• Comfort vs growth
+• Planning vs flexibility
+• Risk vs safety
+4. Challenge
+• Discuss coping with uncertainty
+• Anxiety management
+• Decision paralysis
+• External pressure
+5. Reflection
+• Reflect on personal resilience
+• Skills gained from uncertainty
+• Emotional maturity
+• Trust in self or process
+6. Extended narrative
+• Tell an uncertainty story
+• Stable situation → disruption → uncertainty → adaptation → outcome
+🔴 LEVEL 94 – INFLUENCE & IMPACT
+1. Personal experience
+• Describe how you influence others
+• Family, peers, students, colleagues
+• Direct vs indirect influence
+• Small actions, big effects
+2. Explanation
+• Explain what influence really is
+• Leadership vs manipulation
+• Responsibility of influence
+• Ethical impact
+3. Comparison
+• Compare positive and negative influence
+• Role models vs bad examples
+• Intentional vs unintentional influence
+4. Challenge
+• Discuss risks of influence
+• Misuse of power
+• Misinterpretation
+• Responsibility for outcomes
+5. Reflection
+• Reflect on personal impact
+• What impact do you want to have?
+• How do you measure influence?
+• Long-term vs short-term effects
+6. Extended narrative
+• Tell an influence story
+• Action → reaction → ripple effect → realization
+🔴 LEVEL 95 – DECISION-MAKING UNDER PRESSURE
+1. Personal experience
+• Describe a high-pressure decision
+• Time constraints
+• Stakes involved
+• Emotional state
+2. Explanation
+• Explain how you make decisions under pressure
+• Logic vs emotion
+• Experience vs instinct
+• Values as guidance
+3. Comparison
+• Compare calm vs pressured decisions
+• Quality of outcomes
+• Stress impact
+• Learning differences
+4. Challenge
+• Discuss decision-making difficulties
+• Fear of failure
+• Overthinking
+• External expectations
+5. Reflection
+• Reflect on decision maturity
+• What you would change now
+• Patterns you recognize
+• Growth in judgment
+6. Extended narrative
+• Tell a pressure-decision story
+• Crisis → options → choice → consequence → insight
+LEVELS 96–100 (B2 → Strong B2+ / C1 readiness)
+🔴 LEVEL 96 – GROWTH & MATURITY
+1. Personal experience
+• Describe how you have grown as a person
+• Early attitudes vs current attitudes
+• Emotional growth (patience, responsibility)
+• Key moments that accelerated maturity
+2. Explanation
+• Explain what “growth” and “maturity” mean to you
+• Difference between age and maturity
+• Emotional vs intellectual maturity
+• Signs that someone is growing
+3. Comparison
+• Compare your past self and present self
+• Reactions to failure then vs now
+• Communication style changes
+• Decision-making differences
+4. Challenge
+• Discuss challenges in becoming mature
+• Letting go of ego
+• Accepting responsibility
+• Handling criticism
+5. Reflection
+• Reflect on your ongoing growth
+• Areas where you are still developing
+• Mistakes you now accept calmly
+• How maturity improves relationships
+6. Extended narrative
+• Tell a growth story
+• Immature action → consequence → realization → change → new behavior
+🔴 LEVEL 97 – LONG-TERM VISION
+1. Personal experience
+• Describe your long-term vision for life
+• 5-year and 10-year outlook
+• Career, relationships, personal meaning
+• How this vision has evolved
+2. Explanation
+• Explain why long-term vision matters
+• Direction vs drifting
+• Motivation during difficulty
+• Aligning daily actions with goals
+3. Comparison
+• Compare short-term thinking vs long-term thinking
+• Immediate comfort vs delayed success
+• Emotional vs strategic choices
+• Examples from real life
+4. Challenge
+• Discuss obstacles to maintaining vision
+• Distractions
+• Fear of uncertainty
+• Social pressure
+5. Reflection
+• Reflect on commitment to your vision
+• How confident are you today?
+• What would make you adjust your vision?
+• What keeps you moving forward?
+6. Extended narrative
+• Tell a vision-shaping story
+• Confusion → clarity → long-term choice → persistence
+🔴 LEVEL 98 – CONTRIBUTION TO SOCIETY
+1. Personal experience
+• Describe how you contribute to others
+• Teaching, helping, volunteering
+• Small contributions vs large impact
+• Situations where you felt useful
+2. Explanation
+• Explain what contribution means to you
+• Beyond money status
+• Influence, service, responsibility
+• Individual vs collective contribution
+3. Comparison
+• Compare personal success vs social contribution
+• Self-achievement vs shared value
+• Short-term recognition vs long-term impact
+4. Challenge
+• Discuss barriers to contributing
+• Lack of time
+• Self-doubt
+• Limited resources
+5. Reflection
+• Reflect on your social role
+• Who do you want to help?
+• What problems matter to you?
+• How your skills can serve others
+6. Extended narrative
+• Tell a contribution story
+• Opportunity → action → impact → inner meaning
+🔴 LEVEL 99 – PERSONAL TRANSFORMATION
+1. Personal experience
+• Describe a major transformation in your life
+• Before vs after mindset
+• Emotional shift
+• Behavioral change
+2. Explanation
+• Explain what causes transformation
+• Crisis, learning, reflection
+• Internal vs external triggers
+• Time and effort involved
+3. Comparison
+• Compare gradual change vs sudden transformation
+• Slow growth vs turning points
+• Stability vs disruption
+4. Challenge
+• Discuss difficulty of transformation
+• Resistance to change
+• Fear of losing identity
+• Social expectations
+5. Reflection
+• Reflect on who you have become
+• Strengths gained
+• Values clarified
+• New sense of direction
+6. Extended narrative
+• Tell a transformation story
+• Old self → conflict → breaking point → rebuilding → new self
+🏆 LEVEL 100 – FINAL LEVEL (MASTER FLUENCY)
+This level is not practice. It is a performance.
+Minimal prompts. Maximum ownership.
+1. Where I started
+• My background
+• Initial struggles with English and communication
+• Early limitations
+2. Challenges I faced
+• Emotional, cognitive, linguistic barriers
+• Fear, inconsistency, self-doubt
+• Moments of wanting to quit
+3. How I changed
+• Thinking in English
+• Emotional confidence
+• Communication maturity
+4. My communication ability now
+• How I speak today
+• How I express ideas, emotions, values
+• How others understand me
+5. My future voice
+• How I want to use my voice
+• Teaching, leading, influencing, connecting
+• English as a life tool
+6. Full life narrative
+20 minutes continuous speaking (no interruption)
+Structure guidance
+• Past → turning points → growth → present → future
+• Clear emotional arc
+• Calm pace, confident tone
+🎯 LISA COMPLETION OUTCOME
+After Level 100, learners can:
+✔ Speak 90+ minutes coherently
+✔ Handle abstract, ethical, and philosophical topics
+✔ Maintain narrative control and emotional depth
+✔ Operate confidently at high B2 / early C1 speaking
+✔ Use English as a thinking and life language

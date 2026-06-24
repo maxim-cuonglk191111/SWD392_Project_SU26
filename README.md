@@ -46,4 +46,4 @@ Hệ thống tự động hóa việc đưa nội dung từ các file tài liệ
 2. **Rò rỉ danh tính:** Hệ thống định danh được cô lập hoàn toàn trong .NET Service, chỉ trả về Token ẩn danh cho Node.js.
 3. **Xung đột API:** Dùng Swagger làm tài liệu chung cho 5 Dev, cập nhật hàng ngày.
 
-Link demo: https://swd392-project-su26-1.onrender.com
+Link demo: https://swd392-project-su26.onrender.com

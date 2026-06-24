@@ -41,10 +41,7 @@ app.use('/api/podcast',     podcastRoutes);
 app.use('/api/rooms',       roomRoutes);
 
 // ─── Identity-service proxy (used in socket gift proxy) ─────────────────────────
-let IDENTITY_BASE = process.env.IDENTITY_SERVICE_URL || 'http://identity-service:5064';
-if (IDENTITY_BASE.startsWith('http://') && IDENTITY_BASE.includes('.onrender.com')) {
-  IDENTITY_BASE = IDENTITY_BASE.replace('http://', 'https://');
-}
+let IDENTITY_BASE = process.env.IDENTITY_SERVICE_URL || 'http://localhost:5064';
 
 // ─── Agora Token endpoint ─────────────────────────────────────────────────────────
 app.get('/api/token', (req, res) => {
@@ -216,6 +213,11 @@ app.delete('/api/materials/:roomId/:id', (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+
+// ─── Health check (nginx healthcheck) ───────────────────────────────────────────
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
 // ─── 404 catch-all ──────────────────────────────────────────────────────────────

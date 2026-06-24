@@ -1,68 +1,30 @@
-# Docker Compose tự động đọc file .env ở cùng thư mục (đã git-ignored)
-# Để deploy: copy .env.example -> .env và điền credentials thật
+# Docker Compose đọc file .env ở cùng thư mục (đã git-ignored)
+# copy .env.example → .env và điền credentials
 
 services:
-  identity-service:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
-      target: identity-service
-    ports:
-      - "5064:5064"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Production
-      - JWT_SECRET=${JWT_SECRET}
-    env_file:
-      - ./backend/.env
-
-  lms-service:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: lms-service
+      target: monolit
     ports:
       - "8080:8080"
-
-  backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: backend
-    ports:
-      - "5000:5000"
     env_file:
       - ./backend/.env
     environment:
+      - NODE_ENV=production
       - PORT=5000
       - JWT_SECRET=${JWT_SECRET}
-      - LMS_SERVICE_URL=http://lms-service:8080
-      - IDENTITY_SERVICE_URL=http://identity-service:5064
       - AGORA_APP_ID=${AGORA_APP_ID}
       - AGORA_APP_CERTIFICATE=${AGORA_APP_CERTIFICATE}
-    depends_on:
-      - lms-service
-      - identity-service
+      - LMS_SERVICE_URL=http://localhost:8081
+      - IDENTITY_SERVICE_URL=http://localhost:5064
     volumes:
       - uploads_data:/app/uploads
-
-  frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: frontend
-      args:
-        # URL backend: khi deploy, frontend gọi qua Nginx proxy (cùng origin)
-        # Giá trị này chỉ dùng làm fallback; config.js sẽ tự override khi detect hostname
-        - VITE_BACKEND_URL=
-        - VITE_IDENTITY_URL=
-        # Agora App ID được bake vào JS bundle — App ID là public, an toàn để embed
-        # App Certificate KHÔNG được pass vào frontend (chỉ dùng server-side)
-        - VITE_AGORA_APP_ID=${AGORA_APP_ID}
-    ports:
-      - "80:80"
-    depends_on:
-      - backend
-      - identity-service
+      - identity_data:/app/identity
+      - lms_data:/app/lms
 
 volumes:
   uploads_data:
+  identity_data:
+  lms_data:

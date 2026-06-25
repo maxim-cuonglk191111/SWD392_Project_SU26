@@ -25,7 +25,11 @@ export function initSocket(httpServer: HttpServer) {
         select: { id: true, username: true, displayName: true, avatarId: true, role: true },
       });
       if (!user) return next(new Error('User not found'));
-      Object.assign(socket, user);
+      socket.userId = user.id;
+      socket.username = user.username;
+      socket.displayName = user.displayName;
+      socket.avatarId = user.avatarId;
+      socket.role = user.role;
       next();
     } catch { next(new Error('Invalid token')); }
   });

@@ -12,6 +12,7 @@ RUN npm run build
 
 # ── Backend Build Stage ──
 FROM node:20-alpine AS backend-build
+RUN apk add --no-cache openssl
 WORKDIR /app/backend
 COPY backend/package*.json ./
 RUN npm install
@@ -28,8 +29,8 @@ RUN npm prune --production
 # ── Final Monolith Stage ──
 FROM node:20-alpine AS monolith
 
-# Install Nginx, Supervisor, and Bash (required for supervisor task management)
-RUN apk add --no-cache nginx supervisor bash && \
+# Install Nginx, Supervisor, OpenSSL, and Bash (required for supervisor task management)
+RUN apk add --no-cache nginx supervisor bash openssl && \
     mkdir -p /var/log/supervisor /var/run/nginx /var/log/nginx
 
 # Copy React static files to Nginx public html directory

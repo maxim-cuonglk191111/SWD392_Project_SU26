@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export interface User {
   id: string;
   email: string;
@@ -47,16 +49,17 @@ export interface Room {
   isLocked: boolean;
   isRecording: boolean;
   createdAt: string;
-  host: Pick<User, 'id' | 'username' | 'displayName' | 'avatarId' | 'role'>;
+  // Host in room is anonymous — no real name exposed
+  host: { id: string; role: string };
   level?: Pick<Level, 'id' | 'language' | 'stage' | 'levelNumber' | 'title' | 'subLevels'>;
   participants?: Participant[];
 }
 
 export interface Participant {
   id: string;
-  username: string;
-  displayName: string;
-  avatarId: number;
+  // Anonymous identity — stable per room, deterministic
+  anonymousName: string;
+  anonymousAvatarSeed: number;
   role: 'LISTENER' | 'SPEAKER' | 'MODERATOR' | 'HOST';
   handRaised: boolean;
   isMuted: boolean;
@@ -69,7 +72,12 @@ export interface Message {
   content: string;
   type: 'TEXT' | 'AUDIO' | 'GIFT' | 'SYSTEM';
   createdAt: string;
-  user?: Pick<User, 'id' | 'username' | 'displayName' | 'avatarId' | 'role'>;
+  user?: {
+    id: string;
+    anonymousName: string;
+    anonymousAvatarSeed: number;
+    role: string;
+  };
 }
 
 export interface Gift {

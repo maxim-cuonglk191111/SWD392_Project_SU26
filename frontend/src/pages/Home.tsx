@@ -101,7 +101,7 @@ export default function Home() {
                     <h4 className="font-semibold group-hover:text-primary transition">{room.title}</h4>
                     {room.level && <p className="text-xs text-text-secondary mt-0.5">{room.level.stage} · Level {room.level.levelNumber}: {room.level.title}</p>}
                     <div className="flex items-center gap-3 mt-2 text-xs text-text-secondary">
-                      <span className="flex items-center gap-1"><Avatar id={room.host.avatarId} size="sm" /> {room.host.displayName}</span>
+                      <span className="flex items-center gap-1"><Avatar seed={room.hostId.charCodeAt(0)} size="sm" /> 👑 Chủ phòng ẩn danh</span>
                       <span>{room.currentCount}/{room.maxParticipants} người</span>
                     </div>
                   </div>

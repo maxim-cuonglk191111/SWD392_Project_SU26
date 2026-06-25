@@ -1,12 +1,27 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Mic, MicOff, Hand, Send, Gift, ArrowLeft, Users, Radio, Lock, Crown, Volume2, VolumeX } from 'lucide-react';
+import { Mic, MicOff, Hand, Send, Gift, ArrowLeft, Users, Radio, Crown, Volume2, VolumeX } from 'lucide-react';
 import { roomApi, giftApi } from '../services/api';
 import { socketService } from '../services/socket';
 import { audioService } from '../services/audioService';
 import { Room, Participant, Message, Gift as GiftType } from '../types';
 import { Avatar } from '../components/Avatar';
 import { useAuth } from '../context/AuthContext';
+import { generateAnonymousIdentity } from '../utils/anonymous';
+
+// Convert real participant data to anonymous identity (stable per room)
+function anonymizeParticipant(p: any, roomId: string): Participant {
+  const { anonymousName, anonymousAvatarSeed } = generateAnonymousIdentity(`${p.userId}:${roomId}`);
+  return {
+    id: p.userId,
+    anonymousName,
+    anonymousAvatarSeed,
+    role: p.role || p.user?.role || 'LISTENER',
+    handRaised: p.handRaised ?? false,
+    isMuted: p.isMuted ?? true,
+    isSpeaker: p.isSpeaker ?? false,
+  };
+}
 
 export default function RoomPage() {
   const { id } = useParams<{ id: string }>();
@@ -28,7 +43,6 @@ export default function RoomPage() {
   const [audioReady, setAudioReady] = useState(false);
   const [audioError, setAudioError] = useState('');
   const [activeSpeakers, setActiveSpeakers] = useState<Set<string>>(new Set());
-  const [visualizerData, setVisualizerData] = useState<number[]>([]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const visualizerRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number>(0);
@@ -50,12 +64,10 @@ export default function RoomPage() {
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
-
     const data = audioService.getFrequencyData() || new Uint8Array(64);
     const w = canvas.width;
     const h = canvas.height;
     ctx.clearRect(0, 0, w, h);
-
     const barWidth = w / data.length;
     data.forEach((val, i) => {
       const barH = (val / 255) * h;
@@ -65,7 +77,6 @@ export default function RoomPage() {
       ctx.fillStyle = gradient;
       ctx.fillRect(i * barWidth, h - barH, barWidth - 1, barH);
     });
-
     animationRef.current = requestAnimationFrame(drawVisualizer);
   }, []);
 
@@ -80,15 +91,17 @@ export default function RoomPage() {
         const myPart = res.data.room.participants?.find((p: any) => p.userId === user.id);
         if (myPart) {
           setMyRole(myPart.role);
-          setParticipants(res.data.room.participants?.map((p: any) => ({
-            id: p.userId, username: p.user.username, displayName: p.user.displayName,
-            avatarId: p.user.avatarId, role: p.role, handRaised: p.handRaised,
-            isMuted: p.isMuted, isSpeaker: p.isSpeaker,
-          })) || []);
+          setParticipants(
+            (res.data.room.participants || [])
+              .map((p: any) => anonymizeParticipant(p, id))
+          );
         } else {
-          // Auto-join
           await roomApi.join(id);
           setMyRole('LISTENER');
+          setParticipants(
+            (res.data.room.participants || [])
+              .map((p: any) => anonymizeParticipant(p, id))
+          );
         }
       } catch { navigate('/home'); }
       setLoading(false);
@@ -101,7 +114,7 @@ export default function RoomPage() {
     loadRoom();
     loadGifts();
 
-    // ── Room update ──────────────────────────────────────────────────
+    // ── Room update (already anonymous from backend) ────────────────────
     const handleRoomUpdate = (data: any) => {
       if (data.roomId !== id) return;
       setParticipants(data.participants);
@@ -109,7 +122,9 @@ export default function RoomPage() {
     };
 
     // ── Joined ───────────────────────────────────────────────────────
-    const handleJoined = (data: any) => { if (data.roomId === id) setMyRole(data.role); };
+    const handleJoined = (data: any) => {
+      if (data.roomId === id) setMyRole(data.role);
+    };
 
     // ── Hand update ──────────────────────────────────────────────────
     const handleHandUpdate = (data: any) => {
@@ -178,8 +193,27 @@ export default function RoomPage() {
 
     // ── Kicked ─────────────────────────────────────────────────────
     const handleParticipantKicked = (data: any) => {
-      if (data.userId === user.id) navigate('/home');
-      else setParticipants(prev => prev.filter(p => p.id !== data.userId));
+      if (data.userId === user.id) {
+        setMessages(prev => [...prev, {
+          id: Date.now().toString(), roomId: id || '', content: `⚠️ Bạn đã bị chủ phòng kick khỏi phòng`,
+          type: 'SYSTEM', createdAt: new Date().toISOString(),
+        }]);
+        setTimeout(() => navigate('/home'), 2000);
+      } else {
+        setParticipants(prev => prev.filter(p => p.id !== data.userId));
+      }
+    };
+
+    // ── Leaved room ─────────────────────────────────────────────────
+    const handleLeavedRoom = () => navigate('/home');
+
+    // ── Room ended ──────────────────────────────────────────────────
+    const handleRoomEnded = () => {
+      setMessages(prev => [...prev, {
+        id: Date.now().toString(), roomId: id || '', content: '🔴 Chủ phòng đã kết thúc phòng',
+        type: 'SYSTEM', createdAt: new Date().toISOString(),
+      }]);
+      setTimeout(() => navigate('/home'), 2000);
     };
 
     socketService.on('room_update', handleRoomUpdate);
@@ -192,6 +226,8 @@ export default function RoomPage() {
     socketService.on('notification', handleNotification);
     socketService.on('stage_changed', handleStageChanged);
     socketService.on('participant_kicked', handleParticipantKicked);
+    socketService.on('leaved_room', handleLeavedRoom);
+    socketService.on('room_ended', handleRoomEnded);
 
     socketService.joinRoom(id);
 
@@ -206,6 +242,8 @@ export default function RoomPage() {
       socketService.off('notification', handleNotification);
       socketService.off('stage_changed', handleStageChanged);
       socketService.off('participant_kicked', handleParticipantKicked);
+      socketService.off('leaved_room', handleLeavedRoom);
+      socketService.off('room_ended', handleRoomEnded);
       socketService.leaveRoom(id);
     };
   }, [id, user]);
@@ -323,7 +361,7 @@ export default function RoomPage() {
               {speakers.map(p => (
                 <div key={p.id} className={`relative flex flex-col items-center gap-1 p-2 rounded-xl transition-all ${activeSpeakers.has(p.id) ? 'bg-primary/20 ring-2 ring-primary' : 'bg-surface2'}`}>
                   <div className="relative">
-                    <Avatar id={p.avatarId} size="lg" />
+                    <Avatar seed={p.anonymousAvatarSeed} size="lg" />
                     {p.isMuted && <MicOff size={12} className="absolute -bottom-0.5 -right-0.5 bg-error text-white rounded-full p-0.5" />}
                     {p.role === 'HOST' && <Crown size={11} className="absolute -top-1 -right-1 text-warning" />}
                     {activeSpeakers.has(p.id) && (
@@ -334,7 +372,7 @@ export default function RoomPage() {
                       </span>
                     )}
                   </div>
-                  <span className="text-[10px] font-medium max-w-[60px] truncate">{p.displayName?.split(' ')[0]}</span>
+                  <span className="text-[10px] font-medium max-w-[60px] truncate">{p.anonymousName?.split(' ')[0]}</span>
                   {user?.id !== p.id && (
                     <button onClick={() => sendGiftTo(p.id)} className="absolute inset-0 opacity-0 hover:opacity-100 bg-black/40 rounded-xl flex items-center justify-center transition">
                       <Gift size={14} className="text-accent" />
@@ -358,10 +396,10 @@ export default function RoomPage() {
               {listeners.map(p => (
                 <div key={p.id} className="relative group flex flex-col items-center gap-0.5">
                   <div className="relative">
-                    <Avatar id={p.avatarId} size="sm" />
+                    <Avatar seed={p.anonymousAvatarSeed} size="sm" />
                     {p.handRaised && <Hand size={10} className="absolute -top-1 -right-1 text-warning animate-bounce" />}
                   </div>
-                  <span className="text-[9px] text-text-secondary max-w-[40px] truncate">{p.displayName?.split(' ')[0]}</span>
+                  <span className="text-[9px] text-text-secondary max-w-[40px] truncate">{p.anonymousName?.split(' ')[0]}</span>
                   {user?.id !== p.id && (
                     <button onClick={() => sendGiftTo(p.id)} className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/30 rounded-lg flex items-center justify-center transition">
                       <Gift size={10} className="text-accent" />
@@ -383,9 +421,9 @@ export default function RoomPage() {
             <div className="flex-1 overflow-y-auto p-3 space-y-1.5">
               {messages.filter(m => m.type !== 'SYSTEM').slice(-20).map(m => (
                 <div key={m.id} className={`flex gap-1.5 ${m.user?.id === user?.id ? 'flex-row-reverse' : ''}`}>
-                  {m.user && <Avatar id={m.user.avatarId} size="sm" />}
+                  {m.user && <Avatar seed={m.user.anonymousAvatarSeed} size="sm" />}
                   <div className={`max-w-[75%] rounded-xl px-3 py-1.5 text-sm ${m.user?.id === user?.id ? 'bg-primary/20' : 'bg-surface2'}`}>
-                    {m.user && <span className="text-[9px] text-text-secondary block">{m.user.displayName}</span>}
+                    {m.user && <span className="text-[9px] text-text-secondary block">{m.user.anonymousName}</span>}
                     <p>{m.content}</p>
                   </div>
                 </div>
@@ -412,12 +450,36 @@ export default function RoomPage() {
               <div className="flex justify-between"><span className="text-text-secondary">Ngôn ngữ</span><span className="font-medium">{langFlags[room.language]} {room.language}</span></div>
               <div className="flex justify-between"><span className="text-text-secondary">Người tham gia</span><span className="font-medium">{room.currentCount}/{room.maxParticipants}</span></div>
               <div className="flex justify-between"><span className="text-text-secondary">Chủ phòng</span>
-                <div className="flex items-center gap-1"><Avatar id={room.host.avatarId} size="sm" /><span className="font-medium">{room.host.displayName}</span></div>
+                <div className="flex items-center gap-1"><span className="font-medium">👑 Chủ phòng ẩn danh</span></div>
               </div>
             </div>
           </div>
 
-          {/* Level Info */}
+          {/* Participants list with kick (host only) */}
+          <div id="participants-list" className="hidden">
+            <h4 className="text-xs font-semibold text-text-secondary mb-2">👥 DANH SÁCH THÀNH VIÊN</h4>
+            <div className="space-y-1.5 max-h-48 overflow-y-auto">
+              {participants.map(p => (
+                <div key={p.id} className="flex items-center gap-2 bg-surface2 rounded-lg px-3 py-2">
+                  <Avatar seed={p.anonymousAvatarSeed} size="sm" />
+                  <div className="flex-1 min-w-0">
+                    <div className="text-xs font-medium truncate">{p.anonymousName}</div>
+                    <div className="text-[9px] text-text-secondary">{p.role}</div>
+                  </div>
+                  {isHost && p.id !== user?.id && (
+                    <button onClick={() => {
+                      if (confirm(`Kick ${p.anonymousName} khỏi phòng?`)) {
+                        socketService.kickParticipant(id!, p.id);
+                      }
+                    }}
+                      className="px-2 py-1 rounded-lg bg-error/20 text-error text-[10px] font-medium hover:bg-error/30 transition">
+                      kick
+                    </button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
           {room.level && (
             <div>
               <h4 className="text-xs font-semibold text-text-secondary mb-2">📚 LEVEL HIỆN TẠI</h4>
@@ -431,21 +493,44 @@ export default function RoomPage() {
 
           {/* Quick Actions */}
           <div className="mt-auto space-y-2">
-            <button onClick={() => setShowGifts(!showGifts)} className="w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-accent/20 text-accent font-medium text-sm hover:bg-accent/30 transition">
+            <button onClick={() => setShowGifts(!showGifts)}
+              className="w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-accent/20 text-accent font-medium text-sm hover:bg-accent/30 transition">
               <Gift size={16} /> Tặng quà
             </button>
 
-            {isHost && (
-              <div className="grid grid-cols-2 gap-2">
-                <button onClick={() => { if (room.isRecording) socketService.stopRecording(id!); else socketService.startRecording(id!); }}
-                  className={`py-2 rounded-xl text-xs font-medium text-center transition ${room.isRecording ? 'bg-error/20 text-error animate-pulse' : 'bg-surface2 text-text-secondary'}`}>
-                  {room.isRecording ? '⏹ Dừng ghi' : '⏺ Ghi âm'}
-                </button>
-                <button onClick={() => { if (confirm('Kết thúc phòng?')) { socketService.emit('end_room', { roomId: id }); navigate('/home'); }}}
-                  className="py-2 rounded-xl text-xs font-medium bg-error/20 text-error text-center hover:bg-error/30 transition">
-                  ⏹ Kết thúc
+            {isHost ? (
+              <div className="space-y-2">
+                <div className="grid grid-cols-2 gap-2">
+                  <button onClick={() => { if (room.isRecording) socketService.stopRecording(id!); else socketService.startRecording(id!); }}
+                    className={`py-2 rounded-xl text-xs font-medium text-center transition ${room.isRecording ? 'bg-error/20 text-error animate-pulse' : 'bg-surface2 text-text-secondary'}`}>
+                    {room.isRecording ? '⏹ Dừng ghi' : '⏺ Ghi âm'}
+                  </button>
+                  <button onClick={() => {
+                    const participantsEl = document.getElementById('participants-list');
+                    if (participantsEl) participantsEl.classList.toggle('hidden');
+                  }}
+                    className="py-2 rounded-xl text-xs font-medium bg-warning/20 text-warning text-center hover:bg-warning/30 transition">
+                    🚫 Kick người
+                  </button>
+                </div>
+                <button onClick={() => {
+                  if (confirm('Kết thúc phòng cho tất cả mọi người?')) {
+                    socketService.endRoom(id!);
+                  }
+                }}
+                  className="w-full py-2 rounded-xl text-xs font-medium bg-error/20 text-error text-center hover:bg-error/30 transition">
+                  ⏹ Kết thúc phòng
                 </button>
               </div>
+            ) : (
+              <button onClick={() => {
+                if (confirm('Rời phòng?')) {
+                  socketService.leaveRoom(id!);
+                }
+              }}
+                className="w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-surface2 text-text-secondary font-medium text-sm hover:bg-error/20 hover:text-error transition">
+                🚪 Rời phòng
+              </button>
             )}
           </div>
         </div>

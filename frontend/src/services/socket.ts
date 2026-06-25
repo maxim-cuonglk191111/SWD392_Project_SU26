@@ -45,6 +45,7 @@ class SocketService {
   // ─── Room ───────────────────────────────────────────────────────────
   joinRoom(roomId: string) { this.emit('join_room', { roomId }); }
   leaveRoom(roomId: string) { this.emit('leave_room', { roomId }); }
+  endRoom(roomId: string) { this.emit('end_room', { roomId }); }
 
   // ─── Hand / Mic ────────────────────────────────────────────────────
   raiseHand(roomId: string) { this.emit('raise_hand', { roomId }); }

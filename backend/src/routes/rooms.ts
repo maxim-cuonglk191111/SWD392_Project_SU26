@@ -32,10 +32,24 @@ router.get('/:id', async (req: Request, res: Response) => {
 
 router.post('/', authenticate, requireRole(USER_ROLES.PRO, USER_ROLES.SUPER), async (req: Request, res: Response) => {
   try {
-    const data = z.object({ title: z.string().min(1).max(100), description: z.string().max(500).optional(), levelId: z.string().uuid().optional(), language: z.enum(['EN', 'ZH', 'JP']).optional(), maxParticipants: z.number().int().min(2).max(200).optional() }).parse(req.body);
+    const data = z.object({
+      title: z.string().min(1).max(100),
+      description: z.string().max(500).optional(),
+      levelId: z.string().uuid().optional().or(z.literal('')),
+      language: z.enum(['EN', 'ZH', 'JP']).optional(),
+      maxParticipants: z.number().int().min(2).max(200).optional()
+    }).parse(req.body);
 
     const room = await prisma.room.create({
-      data: { title: data.title, description: data.description, levelId: data.levelId, hostId: req.user!.userId, language: data.language || 'EN', maxParticipants: data.maxParticipants || 50, status: ROOM_STATUS.WAITING },
+      data: {
+        title: data.title,
+        description: data.description,
+        levelId: data.levelId || undefined,
+        hostId: req.user!.userId,
+        language: data.language || 'EN',
+        maxParticipants: data.maxParticipants || 50,
+        status: ROOM_STATUS.WAITING
+      },
       include: { host: { select: { id: true, username: true, displayName: true, avatarId: true, role: true } }, level: { select: { id: true, language: true, stage: true, levelNumber: true, title: true } } },
     });
 

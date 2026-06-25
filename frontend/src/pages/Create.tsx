@@ -32,7 +32,11 @@ export default function Create() {
     setLoading(true);
     setError('');
     try {
-      const res = await roomApi.create(roomForm);
+      const payload = {
+        ...roomForm,
+        levelId: roomForm.levelId || undefined,
+      };
+      const res = await roomApi.create(payload);
       navigate(`/room/${res.data.room.id}`);
     } catch (err: any) {
       setError(err.response?.data?.error || 'Failed to create room');

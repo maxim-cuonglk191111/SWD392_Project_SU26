@@ -116,6 +116,27 @@ export function initSocket(httpServer: HttpServer) {
       } catch (err) { console.error('[Socket] toggle_mic:', err); }
     });
 
+    // ─── Audio Streaming ────────────────────────────────────────────
+    // Nhận chunk âm thanh từ speaker, relay đến tất cả người trong phòng
+    socket.on('audio_chunk', async ({ roomId, chunk }: { roomId: string; chunk: ArrayBuffer; mimeType: string }) => {
+      try {
+        const participant = await prisma.roomParticipant.findUnique({
+          where: { roomId_userId: { roomId, userId: socket.userId! } },
+        });
+        // Chỉ speaker đang bật mic mới được gửi
+        if (!participant || !participant.isSpeaker || participant.isMuted) return;
+
+        // Relay đến tất cả người khác trong phòng (KHÔNG gửi lại cho người gửi)
+        socket.to(roomId).emit('audio_chunk', {
+          userId: socket.userId,
+          displayName: socket.displayName,
+          avatarId: socket.avatarId,
+          chunk: Buffer.from(chunk).toString('base64'),
+          mimeType: 'audio/webm',
+        });
+      } catch (err) { console.error('[Socket] audio_chunk:', err); }
+    });
+
     socket.on('send_message', async ({ roomId, content, type = 'TEXT' }: { roomId: string; content: string; type?: string }) => {
       try {
         if (!content.trim()) return;

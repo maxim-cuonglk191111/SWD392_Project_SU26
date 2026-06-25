@@ -103,8 +103,19 @@ export default function RoomPage() {
               .map((p: any) => anonymizeParticipant(p, id))
           );
         }
-      } catch { navigate('/home'); }
-      setLoading(false);
+      } catch (err: any) {
+        const msg = err.response?.data?.error || 'Không thể tham gia phòng';
+        setMessages(prev => [...prev, {
+          id: Date.now().toString(),
+          roomId: id || '',
+          content: `❌ ${msg}`,
+          type: 'SYSTEM',
+          createdAt: new Date().toISOString(),
+        }]);
+        setTimeout(() => navigate('/home'), 2500);
+      } finally {
+        setLoading(false);
+      }
     };
 
     const loadGifts = async () => {
